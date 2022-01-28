@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="titulo">Código secreto</h1>
+  <h3 class="intro">El siguiente programa permite encriptar frases o palabras, generando un código secreto.</h3>
+
+  <main class="main">
+    <section class="form-box">
+      <form action="">
+        <h2 for="input-texto">Solo letras minúsculas, sin acento</h2>
+        <input class="text-input" type="text" name="input-texto" id="input" placeholder="Ingrese el texto aqui" onkeypress="return ((event.charCode >= 97 && event.charCode <= 122) || (event.charCode ==  32))">
+        <input class="btn" onclick="solucion()" type="button" value="ENCRIPTAR!" id="btn-encriptar">
+        <input class="btn" onclick="solucion2()" type="button" value="DESENCRIPTAR!" id="btn-desencriptar">
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <h2 id="">Mensaje encriptado:</h2>
+      <input class="text-input" type="text" id="msg"></input>
+      <input class="btn" type="button" value="COPIAR" id="btn-copy">
+    </section>
+  </main>
+  <div class="indicaciones">
+  <p class="atencion">ATENCIÓN!! El programa no permite números, caracteres especiales o letras mayusculas</p>
+  </div>
+  <script src="script.js"></script>
+  <script src="desencriptar.js"></script>
+  <script src="boton_copiar.js"></script>
+</body>
+<footer>
+  <p>Autor: ELCANO MARINAELLA</p>
+  <P></P>
+</footer>
+</html>
